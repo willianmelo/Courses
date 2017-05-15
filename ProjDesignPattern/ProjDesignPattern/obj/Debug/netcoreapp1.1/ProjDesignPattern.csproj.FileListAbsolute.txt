@@ -1,0 +1,9 @@
+E:\Estudos\Alura\ProjDesignPattern\ProjDesignPattern\bin\Debug\netcoreapp1.1\ProjDesignPattern.deps.json
+E:\Estudos\Alura\ProjDesignPattern\ProjDesignPattern\bin\Debug\netcoreapp1.1\ProjDesignPattern.runtimeconfig.json
+E:\Estudos\Alura\ProjDesignPattern\ProjDesignPattern\bin\Debug\netcoreapp1.1\ProjDesignPattern.runtimeconfig.dev.json
+E:\Estudos\Alura\ProjDesignPattern\ProjDesignPattern\obj\Debug\netcoreapp1.1\ProjDesignPattern.csprojResolveAssemblyReference.cache
+E:\Estudos\Alura\ProjDesignPattern\ProjDesignPattern\obj\Debug\netcoreapp1.1\ProjDesignPattern.AssemblyInfo.cs
+E:\Estudos\Alura\ProjDesignPattern\ProjDesignPattern\bin\Debug\netcoreapp1.1\ProjDesignPattern.dll
+E:\Estudos\Alura\ProjDesignPattern\ProjDesignPattern\bin\Debug\netcoreapp1.1\ProjDesignPattern.pdb
+E:\Estudos\Alura\ProjDesignPattern\ProjDesignPattern\obj\Debug\netcoreapp1.1\ProjDesignPattern.dll
+E:\Estudos\Alura\ProjDesignPattern\ProjDesignPattern\obj\Debug\netcoreapp1.1\ProjDesignPattern.pdb
