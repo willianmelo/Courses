@@ -4,7 +4,7 @@ public class DescontoPorCincoItens : Desconto
 {
     public Desconto Proximo { get; set; }
 
-    public double Desconta(Orcamento orcamento)
+    public double Calcula(Orcamento orcamento)
     {
         if (orcamento.Itens.Count > 5)
         {
@@ -12,7 +12,7 @@ public class DescontoPorCincoItens : Desconto
         }
         else
         {
-            return Proximo.Desconta(orcamento);
+            return Proximo.Calcula(orcamento);
         }
     }
 }

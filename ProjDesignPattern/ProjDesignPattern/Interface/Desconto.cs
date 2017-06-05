@@ -2,6 +2,6 @@
 
 public interface Desconto
 {
-    double Desconta(Orcamento orcamento);
+    double Calcula(Orcamento orcamento);
     Desconto Proximo { get; set; }
 }

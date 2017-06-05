@@ -8,7 +8,7 @@ namespace ProjDesignPattern
     {
         public Desconto Proximo { get; set; }
 
-        public Double Desconta(Orcamento orcamento)
+        public Double Calcula(Orcamento orcamento)
         {
             return 0;
         }
