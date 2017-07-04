@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;  
 
+
+
 namespace ProjDesignPattern.Interface
 {
     public abstract class Imposto
