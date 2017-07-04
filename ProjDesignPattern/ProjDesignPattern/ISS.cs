@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using ProjDesignPattern.Interface;
 
+
 namespace ProjDesignPattern
 {
     public class ISS : Imposto

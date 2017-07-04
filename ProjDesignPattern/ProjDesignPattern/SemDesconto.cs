@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
+
+
 namespace ProjDesignPattern
 {
     public class SemDesconto : Desconto
