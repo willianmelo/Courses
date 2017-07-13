@@ -1,5 +1,4 @@
-﻿using ProjDesignPattern.Interface;
-using System;
+﻿using System;
 
 namespace ProjDesignPattern
 {
@@ -7,12 +6,19 @@ namespace ProjDesignPattern
     {
         static void Main(String[] args)
         {
-            Imposto iss = new ISS(new ICMS(new IKCV()));
-            Orcamento orcamento = new Orcamento(500);
-            double valor = iss.Calcula(orcamento);
+            Orcamento reforma = new Orcamento(500);
 
-            Console.WriteLine(valor);
+            Console.WriteLine(reforma.Valor);
+            reforma.AplicaDescontoExtra();
+            Console.WriteLine(reforma.Valor);
+
+            reforma.Aprova();
+            reforma.AplicaDescontoExtra();
+            Console.WriteLine(reforma.Valor);
+
+            reforma.Finaliza();
             Console.ReadKey();
+
         }
     }
 }

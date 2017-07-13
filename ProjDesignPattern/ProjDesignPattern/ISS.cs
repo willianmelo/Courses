@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using ProjDesignPattern.Interface;
+﻿using ProjDesignPattern.Interface;
 
 
 namespace ProjDesignPattern
