@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ProjDesignPattern
 {
@@ -6,19 +7,20 @@ namespace ProjDesignPattern
     {
         static void Main(String[] args)
         {
-            Orcamento reforma = new Orcamento(500);
+            NotaFiscalBuilder criador = new NotaFiscalBuilder();
+            criador.ParaEmpresa("Teste Willian Ltda.")
+                   .ComCnpj("23.456.789/0001-12")
+                   .comItem(new ItemNota("item 1", 100.00))
+                   .comItem(new ItemNota("item 2", 200.00))
+                   .NadataAtual(DateTime.Now)
+                   .ComObservacoes("obs");
 
-            Console.WriteLine(reforma.Valor);
-            reforma.AplicaDescontoExtra();
-            Console.WriteLine(reforma.Valor);
+            NotaFiscal nf = criador.Constroi();
 
-            reforma.Aprova();
-            reforma.AplicaDescontoExtra();
-            Console.WriteLine(reforma.Valor);
+            Console.WriteLine(nf.ValorBruto);
+            Console.WriteLine(nf.Impostos);
 
-            reforma.Finaliza();
             Console.ReadKey();
-
         }
     }
 }
