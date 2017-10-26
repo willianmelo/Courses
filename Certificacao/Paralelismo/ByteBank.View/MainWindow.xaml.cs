@@ -30,7 +30,7 @@ namespace ByteBank.View
             var contas_parte1 = contas.Take(contasQtdThread);
             var contas_parte2 = contas.Skip(contasQtdThread).Take(contasQtdThread);
             var contas_parte3 = contas.Skip(2* contasQtdThread).Take(contasQtdThread);
-            var contas_parte4 = contas.Skip(3* contasQtdThread).Take(contasQtdThread);
+            var contas_parte4 = contas.Skip(3* contasQtdThread);
 
             var resultado = new List<string>();
 
@@ -71,6 +71,18 @@ namespace ByteBank.View
                     resultado.Add(resultadoProcessamento);
                 }
             });
+
+
+            thread_parte1.Start();
+            thread_parte2.Start();
+            thread_parte3.Start();
+            thread_parte4.Start();
+
+            while(thread_parte1.IsAlive || thread_parte2.IsAlive || thread_parte3.IsAlive || thread_parte4.IsAlive)
+            {
+                Thread.Sleep(250);
+            }
+
 
             var fim = DateTime.Now;
 
