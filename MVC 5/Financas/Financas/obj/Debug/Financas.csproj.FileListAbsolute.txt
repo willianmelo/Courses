@@ -46,7 +46,6 @@ E:\Estudos\Alura\MVC 5\Financas\Financas\bin\System.Web.Webpages.Deployment.xml
 E:\Estudos\Alura\MVC 5\Financas\Financas\bin\System.Web.Webpages.Razor.xml
 E:\Estudos\Alura\MVC 5\Financas\Financas\bin\System.Web.Helpers.xml
 E:\Estudos\Alura\MVC 5\Financas\Financas\bin\System.Web.Mvc.xml
-E:\Estudos\Alura\MVC 5\Financas\Financas\obj\Debug\Financas.csprojResolveAssemblyReference.cache
 E:\Estudos\Alura\MVC 5\Financas\Financas\obj\Debug\Financas.dll
 E:\Estudos\Alura\MVC 5\Financas\Financas\obj\Debug\Financas.pdb
 E:\Estudos\Alura\MVC 5\Financas\Financas\obj\Debug\Financas.Migrations.TabelasIniciais.resources

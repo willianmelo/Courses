@@ -1,0 +1,23 @@
+﻿<Window x:Class="CRUD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="0,0,101,52">
+        <Button x:Name="btnInserir" Content="Inserir" HorizontalAlignment="Left" Margin="312,205,0,0" VerticalAlignment="Top" Width="84" Height="49" Click="btnInserir_Click"/>
+        <TextBox x:Name="tNome" HorizontalAlignment="Left" Height="23" Margin="79,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Binding./>
+        <Label Content="Nome" HorizontalAlignment="Left" Height="23" Margin="22,0,0,207" VerticalAlignment="Bottom" Width="43" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-1.014"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+    </Grid>
+</Window>
