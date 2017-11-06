@@ -14,9 +14,16 @@ namespace ProjDesignPattern
         public DateTime Data { get; set; }
         IList<ItemNota> todosItens = new List<ItemNota>();
 
+        private IList<AcaoAposGerarNota> todasAcoesASeremExecutadas = new List<AcaoAposGerarNota>();
+
         public NotaFiscalBuilder()
         {
             this.Data = DateTime.Now;
+        }
+
+        public void AdicionaAcao(AcaoAposGerarNota novaAcao)
+        {
+            this.todasAcoesASeremExecutadas.Add(novaAcao);
         }
 
 
@@ -55,8 +62,22 @@ namespace ProjDesignPattern
 
         public NotaFiscal Constroi()
         {
-            return new NotaFiscal(RazaoSocial, Cnpj, Data, Observacoes, valorTotal, imposto, todosItens);
+            NotaFiscal nf = new NotaFiscal(RazaoSocial, Cnpj, Data, Observacoes, valorTotal, imposto, todosItens);
+
+            foreach (var acao in todasAcoesASeremExecutadas)
+                acao.Executa(nf);
+
+            return nf;
         }
+
+        private void EnviarPorEmail(NotaFiscal nf)
+        { }
+
+        private void SalvaNoBanco(NotaFiscal nf)
+        { }
+
+        private void EnviarPorSms(NotaFiscal nf)
+        { }
     }
 }
 

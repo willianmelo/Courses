@@ -15,6 +15,10 @@ namespace ProjDesignPattern
                    .NadataAtual(DateTime.Now)
                    .ComObservacoes("obs");
 
+            criador.AdicionaAcao(new EnviadorDeEmail());
+            criador.AdicionaAcao(new NotaFiscalDao());
+            criador.AdicionaAcao(new EnviadorDeSms());
+
             NotaFiscal nf = criador.Constroi();
 
             Console.WriteLine(nf.ValorBruto);
